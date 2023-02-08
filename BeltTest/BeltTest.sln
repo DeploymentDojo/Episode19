@@ -11,6 +11,12 @@ Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "CommunityPackage", "Communi
 EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "EnterprisePackage", "EnterprisePackage\EnterprisePackage.wixproj", "{2E41FF92-B9E2-4C5F-8B19-90D017B628A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build-goo", "build-goo", "{CABDB58E-4CAC-45FD-8C35-A1B4FF577560}"
+	ProjectSection(SolutionItems) = preProject
+		..\build.cmd = ..\build.cmd
+		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
