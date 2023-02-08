@@ -1,0 +1,11 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Name="EnterprisePackage" Manufacturer="!(loc.Manufacturer)" Version="$(Version)" UpgradeCode="b0dced2e-98b4-47f8-9a03-383371b2568d">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <WixVariable Id="Edition" Value="Enterprise"/>
+    
+    <Feature Id="Main">
+      <ComponentGroupRef Id="Stuff" />
+    </Feature>
+  </Package>
+</Wix>

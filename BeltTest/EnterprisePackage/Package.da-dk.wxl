@@ -1,0 +1,9 @@
+﻿<!--
+This file contains the declaration of all the localizable strings.
+-->
+<WixLocalization xmlns="http://wixtoolset.org/schemas/v4/wxl" Culture="da-DK">
+
+  <String Id="Manufacturer" Value="~Deployment Dojo Enterprise (da-DK)" />
+  <String Id="DowngradeError" Value="En nyere version af [ProductName] er allerede installeret" />
+
+</WixLocalization>

@@ -1,0 +1,13 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <Property Id="CUSTOMER" Value="!(bind.Property.Manufacturer)" />
+
+  <ComponentGroup Id="Stuff" Directory="INSTALLFOLDER">
+      <Component>
+        <File Source="ConsoleApp1.exe" />
+        <RegistryValue Root="HKLM" Key="SOFTWARE\BeltTest" Name="Edition" Value="!(wix.Edition)" />
+        <RegistryValue Root="HKLM" Key="SOFTWARE\BeltTest" Name="Customer" Value="[CUSTOMER]" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
